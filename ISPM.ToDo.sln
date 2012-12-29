@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPM.ToDo.Domain", "ISPM.To
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPM.ToDo.Tests", "ISPM.ToDo.Tests\ISPM.ToDo.Tests.csproj", "{C807BB29-AED7-4208-85BC-81CD396F7782}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPM.ToDo.Data", "ISPM.ToDo.Data\ISPM.ToDo.Data.csproj", "{FE2C06CC-BF0D-4C3B-AD28-1C6665DEBE8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{C807BB29-AED7-4208-85BC-81CD396F7782}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C807BB29-AED7-4208-85BC-81CD396F7782}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C807BB29-AED7-4208-85BC-81CD396F7782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2C06CC-BF0D-4C3B-AD28-1C6665DEBE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2C06CC-BF0D-4C3B-AD28-1C6665DEBE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2C06CC-BF0D-4C3B-AD28-1C6665DEBE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2C06CC-BF0D-4C3B-AD28-1C6665DEBE8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
