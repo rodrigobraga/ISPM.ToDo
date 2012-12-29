@@ -9,6 +9,8 @@ using System.Web.Routing;
 
 namespace ISPM.ToDo.API
 {
+    using global::API.Handlers;
+
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
 
@@ -22,6 +24,8 @@ namespace ISPM.ToDo.API
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            GlobalConfiguration.Configuration.MessageHandlers.Add(new CorsHandler());
         }
     }
 }
