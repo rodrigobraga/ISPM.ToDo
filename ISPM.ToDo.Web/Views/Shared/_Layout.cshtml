@@ -2,15 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    @Styles.Render("~/Content/css", "~/Content/bootstrap.min.css", "~/Content/bootstrap-responsive.min.css")
+
+    <title>ISPM ToDo &mdash; @ViewBag.Title</title>
 </head>
 <body>
     @RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render(new string[] {
+        "~/bundles/jquery",
+        "~/bundles/jqueryval",
+        "~/bundles/knockoutjs",
+        "~/bundles/bootstrap",
+        "~/bundles/todo",
+    })
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
