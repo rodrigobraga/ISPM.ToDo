@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="row-fluid">      
+    <div class="span2"></div>
+
+    <div class="span8">
+        <h2>ToDo</h2>
+        <h3><em>The Ultimate Personal App</em></h3>
+    </div>
+
+    <div class="span2"></div>
+</div>
+
+<hr />
+
+<div class="row-fluid">
+    <div class="span2"></div>
+      
+    <div class="span8">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <td></td>
+                    <td></td>              
+                    <td>descrição</td>
+                    <td>criado em</td>
+                    <td>finalizado em</td>
+                </tr>
+            </thead>
+            <tfoot></tfoot>
+            <tbody data-bind="foreach: todos">
+                <tr data-bind="css: { strike: Completed }">
+                    <td><input type="checkbox" data-bind="checked: Completed, event: { change: $parent.done }" /></td>
+                    <td><a href="#" data-bind="click: $parent.remove"><i class="icon-trash"></i></a></td>
+                    <td data-bind="text: Description"></td>
+                    <td data-bind="text: OpenDateSupport"></td>
+                    <td data-bind="text: CloseDateSupport"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="#AddToDo" role="button" class="btn" data-toggle="modal">add new</a>
+
+    </div>
+      
+    <div class="span2">
+        <p><strong data-bind="text: todos().length"></strong> To Dos</p>
+        <p><strong data-bind="text: filterByProperty('Completed', true).length"></strong> complete</p>
+        <p><strong data-bind="text: filterByProperty('Completed', false).length"></strong> pendings</p>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="AddToDo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">new todo</h3>
+    </div>
+    <div class="modal-body">
+        <form id="AddToDoForm" method="POST">
+            <p>
+                <label for="Description">description</label>
+                <input type="text" id="Description" value="" />
+            </p>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">close</button>
+        <button class="btn btn-primary" data-bind="click: add">save</button>
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            viewModel.loadToDos();
+            ko.applyBindings(viewModel);
+        });
+    </script>
+}
