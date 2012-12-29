@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPM.ToDo.Application", "IS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPM.ToDo.API", "ISPM.ToDo.API\ISPM.ToDo.API.csproj", "{8A225961-638F-4143-997D-502E26188DD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPM.ToDo.Web", "ISPM.ToDo.Web\ISPM.ToDo.Web.csproj", "{03CDE4FC-6126-402B-938B-AC7844AECBAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{8A225961-638F-4143-997D-502E26188DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A225961-638F-4143-997D-502E26188DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A225961-638F-4143-997D-502E26188DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03CDE4FC-6126-402B-938B-AC7844AECBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03CDE4FC-6126-402B-938B-AC7844AECBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03CDE4FC-6126-402B-938B-AC7844AECBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03CDE4FC-6126-402B-938B-AC7844AECBAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
