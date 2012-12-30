@@ -1,4 +1,4 @@
-﻿namespace ISPM.ToDo.Application
+﻿namespace ISPM.ToDo.Application.Services
 {
     using System.Collections.Generic;
 

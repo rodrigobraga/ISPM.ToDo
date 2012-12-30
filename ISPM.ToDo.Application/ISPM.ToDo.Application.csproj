@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ToDoService.cs" />
+    <Compile Include="Services\ToDoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ISPM.ToDo.Data\ISPM.ToDo.Data.csproj">
