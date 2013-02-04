@@ -6,6 +6,8 @@ Aplicativo (básico) para administrar uma **lista de tarefas pessoal**, criado p
 
 Na [ISPM](http://www.ispm.com.br) usamos Python (Django), e eventualmente nos questionamos sobre as formas como escrevemos software, um dos objetivos primários deste aplicativo, é nos permitir confrontar uma forma diferente (DDD) e ferramentas (.NET, KO JS e etc.) diferentes com as que usamos no nosso dia-a-dia.
 
+E por conta disto resolvemos conversar um pouco sobre isso ([slides](http://sdrv.ms/VzG5DF))
+
 ## tecnologias
 
 * [ASP.NET MVC](http://www.asp.net)
